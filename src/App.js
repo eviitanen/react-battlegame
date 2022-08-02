@@ -4,8 +4,11 @@ import './App.css';
 function App() {
   const [comment, setComment] = useState('')
 
+  useEffect(() => {
   if (comment === '')
   setComment('comment')
+})
+
   return (
     <div className="App">
         <p>
